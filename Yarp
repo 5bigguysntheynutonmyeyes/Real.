@@ -42,11 +42,11 @@ local GetChildren = Instancenew("Part").GetChildren
 local AimingSettings = {
     Enabled = true,
     VisibleCheck = true,
-    TeamCheck = true,
+    TeamCheck = false,
     PlayerCheck = true,
     IgnoredCheck = true,
     HitChance = 100,
-    TargetPart = {"Head", "HumanoidRootPart"},
+    TargetPart = {"Head"},
     RaycastIgnore = nil,
     Offset = Vector2new(),
 
