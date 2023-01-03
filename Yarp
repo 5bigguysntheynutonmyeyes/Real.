@@ -53,14 +53,14 @@ local AimingSettings = {
     FOVSettings = {
         Circle = Drawingnew("Circle"),
         Enabled = true,
-        Scale = 60,
+        Scale = 15,
         Sides = 12,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
     TracerSettings = {
         Tracer = Drawingnew("Line"),
-        Enabled = true,
+        Enabled = false,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
