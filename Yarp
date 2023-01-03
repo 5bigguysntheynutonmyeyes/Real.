@@ -54,7 +54,7 @@ local AimingSettings = {
         Circle = Drawingnew("Circle"),
         Enabled = true,
         Scale = 15,
-        Sides = 12,
+        Sides = 100,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
