@@ -69,19 +69,19 @@ local GetChildren = Instancenew("Part").GetChildren
 local AimingSettings = {
     Enabled = true,
     InternalEnabled = false, -- // Do not modify, for internal use only
-    GUIAutoShow = true,
+    GUIAutoShow = false,
 
     VisibleCheck = true,
-    TeamCheck = true,
+    TeamCheck = false,
     PlayerCheck = true,
-    FriendCheck = true,
+    FriendCheck = false,
     ForcefieldCheck = true,
     HealthCheck = true,
     InvisibleCheck = true,
     IgnoredCheck = true,
 
     HitChance = 100,
-    TargetPart = {"Head", "HumanoidRootPart"},
+    TargetPart = {"Head", "Torso", "Left Arm", "Right Arm" },
     RaycastIgnore = nil,
     Offset = Vector2new(),
     MaxDistance = 1000,
@@ -100,8 +100,8 @@ local AimingSettings = {
         Enabled = true,
         Visible = true,
         Type = "Static",
-        Scale = 60,
-        Sides = 12,
+        Scale = 11,
+        Sides = 100,
         Colour = Color3fromRGB(231, 84, 128),
         DynamicFOVConstant = 25,
 
@@ -125,22 +125,36 @@ local AimingSettings = {
 
     Ignored = {
         WhitelistMode = {
-            Players = false,
+            Players = true,
             Teams = false
         },
 
         Teams = {},
-        IgnoreLocalTeam = true,
+        IgnoreLocalTeam = false,
 
         Players = {
             LocalPlayer,
-            91318356
+            91318356,
+            3842165717,
+            1102415403,
+            1749948623,
+            37361984,
+            90194545,
+            552504963,
+            31877023,
+            495380237,
+            203852951,
+            143600058,
+            4691116076
+
+
+
         }
     }
 }
 local Aiming = {
     Loaded = false,
-    ShowCredits = true,
+    ShowCredits = false,
     Settings = AimingSettings,
 
     Signals = SignalManager.new(),
