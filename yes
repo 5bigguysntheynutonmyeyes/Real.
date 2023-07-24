@@ -71,7 +71,7 @@ local AimingSettings = {
     InternalEnabled = false, -- // Do not modify, for internal use only
     GUIAutoShow = false,
 
-    VisibleCheck = true,
+    VisibleCheck = false,
     TeamCheck = false,
     PlayerCheck = true,
     FriendCheck = false,
@@ -100,7 +100,7 @@ local AimingSettings = {
         Enabled = true,
         Visible = true,
         Type = "Static",
-        Scale = 11,
+        Scale = 30,
         Sides = 100,
         Colour = Color3fromRGB(231, 84, 128),
         DynamicFOVConstant = 25,
