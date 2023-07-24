@@ -125,7 +125,7 @@ local AimingSettings = {
 
     Ignored = {
         WhitelistMode = {
-            Players = true,
+            Players = false,
             Teams = false
         },
 
